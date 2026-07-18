@@ -1,4 +1,4 @@
-import "./Home.css";
+import "../styles/Home.css";
 
 import prophetImage from "../assets/media/prophet.jpg";
 import congregationImage from "../assets/media/congregation.jpg";
@@ -6,7 +6,7 @@ import serviceVideo from "../assets/media/service.mp4";
 
 function Home() {
   return (
-    <main className="home">
+    <main className="home" id="home">
       <section className="home-intro">
         <div className="home-intro__content">
           <p className="home-intro__church-name">
@@ -69,6 +69,33 @@ function Home() {
           </p>
         </div>
       </section>
+
+      <section className="home-welcome" id="about">
+  <div className="home-welcome__image">
+    <img
+      src={welcomingCongregationImage}
+      alt="Members of House of Miracles gathered during a church service"
+    />
+  </div>
+
+  <div className="home-welcome__content">
+    <p className="home-welcome__label">Welcome to House of Miracles</p>
+
+    <h2 className="home-welcome__title">
+      There is a place for you here.
+    </h2>
+
+    <p className="home-welcome__text">
+      Whether you are visiting for the first time or looking for a church to
+      call home, you are welcome at House of Miracles. Join us for worship,
+      prayer, teaching and prophetic ministry.
+    </p>
+
+    <a className="home-welcome__link" href="#visit">
+      Plan Your Visit
+    </a>
+  </div>
+</section>
     </main>
   );
 }
