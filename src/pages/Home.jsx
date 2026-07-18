@@ -2,6 +2,7 @@ import "../styles/Home.css";
 
 import prophetImage from "../assets/media/prophet.jpg";
 import congregationImage from "../assets/media/congregation.jpg";
+import welcomingCongregationImage from "../assets/media/welcoming-congregation.jpg";
 import serviceVideo from "../assets/media/service.mp4";
 
 function Home() {
